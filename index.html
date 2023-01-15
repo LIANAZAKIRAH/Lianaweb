@@ -1,0 +1,96 @@
+<html> 
+    <head>
+        <link rel="stylesheet" type="text/css" href="clock_style.css">
+          <script type="text/javascript">
+            window.onload = setInterval(clock,1000);
+        
+            function clock()
+            {
+              var d = new Date();
+              
+              var date = d.getDate();
+              
+              var month = d.getMonth();
+              var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+              month=montharr[month];
+              
+              var year = d.getFullYear();
+              
+              var day = d.getDay();
+              var dayarr =["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+              day=dayarr[day];
+              
+              var hour =d.getHours();
+              var min = d.getMinutes();
+              var sec = d.getSeconds();
+            
+              document.getElementById("date").innerHTML=day+" "+date+" "+month+" "+year;
+              document.getElementById("time").innerHTML=hour+":"+min+":"+sec;
+            }
+          </script>
+        
+        
+        
+           <p id="date"></p>
+           <p id="time"></p>
+
+        <title>
+            My Homepage
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body background="images/pink.jpg"></body>
+    <body>
+        <center>
+        <a href="index.html"target="main">Home</a>
+        <a href="bio.html"target="main">Biography</a>
+        <a href="contact.html"target="main">Contact</a>
+        <a href="education.html"target="main">Education</a>
+        <a href="gallery.html"target="main">Gallery</a>
+        <a href="video.html" target="main">Video</a>
+        <a href="experience.html" target="main">Experience</a>
+        </center>
+        <br>
+
+
+       <center>
+
+        <br clear="right">
+
+        <audio controls>
+            <source src="audio/lovemaybe.mp3" type="audio/mp3">
+            <source src="audio/lovemaybe.mp3" type="audio/mpeg">
+          
+         </audio>
+         
+       </center>
+
+        <center>
+            <h1>WELCOME TO LIANA ZAKIRAH'S LIFE</h1>
+        </center>
+        
+
+        <br>
+
+        <center>
+        <img src="images/liana.jpeg" 
+        width="300px"
+        height="400px">
+        </center>
+
+        <center>
+            <h3>
+                <i>  “I am who I am. Not who you think I am. Not who you want me to be. I am me.” – Brigitte Nicole  </i> 
+            </h3>
+            
+            
+        </center>
+        
+        <br>
+            <center>
+                <a href="#top">Back to top</a>
+            </center>
+    
+    </body>
+</html>
